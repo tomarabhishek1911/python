@@ -1,0 +1,58 @@
+#n is no of rows and column
+import random
+n=int(input("size of the matrix to be printed: "))
+list2=[1,2,3,4,5,6,7,8,9]
+m=random.choice(list2)
+if n==1:
+    list1=[1,2,3,4,5,6,7,8,9]
+    print(random.choice(list1))
+if n==2:
+    a=[[2,3],[3,2]]
+    for i in range(n):
+        for j in range(n):
+            print(m*a[i][j],end=" ")
+        print()
+if n==3:
+    b=[[6,3,6],[5,5,5],[4,7,4]]
+    for i in range(n):
+        for j in range(n):
+            print(m*b[i][j],end=" ")
+        print()
+if n==4:
+    c=[[22,12,18,87],[88,17,9,25],[10,24,89,16],[19,86,23,11]]
+    for i in range(n):
+        for j in range(n):
+            print(m*c[i][j],end=" ")
+        print()
+if n==5:
+    d=[[2,4,3,1,5],[1,5,2,3,4],[5,3,1,4,2],[4,1,5,2,3],[3,2,4,5,1]]
+    for i in range(n):
+        for j in range(n):
+            print(m*d[i][j],end=" ")
+        print()
+if n==6:
+    e=[[5,2,4,6,1,3],[1,3,6,4,5,2],[2,6,1,5,3,4],[3,4,5,2,6,1],[6,1,2,3,4,5],[4,5,3,1,2,6]]
+    for i in range(n):
+        for j in range(n):
+            print(m*e[i][j],end=" ")
+        print()
+if n==7:
+    f=[[5,7,2,4,6,1,3],[6,1,3,5,7,2,4],[7,2,4,6,1,3,5],[1,3,5,7,2,4,6],[2,4,6,1,3,5,7],[3,5,7,2,4,6,1],[4,6,1,3,5,7,2]]
+    for i in range(n):
+        for j in range(n):
+            print(m*f[i][j],end=" ")
+        print()
+if n==8:
+    g=[[4,8,6,2,1,5,3,7],[3,7,5,1,6,2,4,8],[8,3,2,6,5,1,7,4],[7,4,1,5,8,6,2,3],[6,2,8,7,3,4,5,1],[5,1,4,3,7,8,6,2],[1,5,7,4,2,3,8,6],[2,6,3,8,4,7,1,5]]
+    for i in range(n):
+        for j in range(n):
+            print(m*g[i][j],end=" ")
+        print()
+if n==9:
+    h=[[4,5,1,3,9,2,7,8,6],[9,2,3,8,6,7,1,4,5],[8,6,7,1,5,4,3,2,9],[1,3,6,5,4,9,2,7,8],[2,4,5,7,8,3,6,9,1],[7,9,8,6,2,1,4,5,3],[5,8,2,4,3,6,9,1,7],[6,1,9,2,7,5,8,3,4],[3,7,4,9,1,8,5,6,2]]
+    for i in range(n):
+        for j in range(n):
+            print(m*h[i][j],end=" ")
+        print()
+elif n<=0 or n>=9:
+    print("Input is invalid")
